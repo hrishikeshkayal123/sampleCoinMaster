@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">#Coins</string>
+    <string name="splash_text"> Carousel Demo\n ILA Bank</string>
+    <string name="splash_text2"> NeoSOFT</string>
+    <string name="splash_btn">Proceed</string>
+    <string name="search_coins">Search Coins</string>
+    <string name="loader_text">Loading…</string>
+</resources>

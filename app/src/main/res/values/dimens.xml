@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="sp22">22sp</dimen>
+    <dimen name="sp44">44sp</dimen>
+
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="dp150">150dp</dimen>
+    <dimen name="dp250">250dp</dimen>
+    <dimen name="sp16">16sp</dimen>
+
+
+</resources>

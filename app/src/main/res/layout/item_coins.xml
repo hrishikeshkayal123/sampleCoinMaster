@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemData"
+            type="ila.bank.carousel_demo.features.dashboard.models.CoinItemData" />
+
+        <variable
+            name="viewModel"
+            type="ila.bank.carousel_demo.features.dashboard.DashboardViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="@dimen/dp5"
+        android:onClick="@{()->viewModel.onCoinsClick()}"
+        android:padding="@dimen/dp10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:padding="@dimen/dp10"
+            android:scaleType="fitXY"
+            app:bindImageUrl="@{itemData.image}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/loader" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="@{itemData.overview}"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/dots"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Id : 1\nName : Bit Coin \n#bitcoin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
